@@ -19,7 +19,7 @@
       ["meta-address", "metaaddress", "meta address"],
       ["Soroban", "Stellar smart contract"],
       ["friendbot", "testnet faucet"],
-      ["XLM", "lumen"],
+      ["XLM", "lumen", "reflector"],
       ["Freighter", "Stellar wallet"]
     ],
     "boosts": [
@@ -84,12 +84,22 @@
               "architecture/overview",
               "architecture/chain-connectors",
               "architecture/tee",
-              "architecture/stellar-cryptography"
+              "architecture/stellar-cryptography",
+              "architecture/view-tag-scanner"
             ]
           },
           {
             "group": "Contracts",
             "pages": ["contracts/evm", "contracts/stellar", "contracts/solana", "contracts/ckb", "reference/stellar-event-schemas"]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/stellar-networks",
+              "reference/stellar-event-schemas",
+              "reference/threat-model",
+              "reference/security-disclosure"
+            ]
           }
         ]
       },
@@ -123,6 +133,12 @@
             ]
           },
           {
+            "group": "Integrations",
+            "pages": [
+              "guides/integrations/aquarius"
+            ]
+          },
+          {
             "group": "Operations",
             "pages": [
               "guides/stellar-mainnet-deployment",
@@ -131,11 +147,12 @@
               "guides/stellar-offline-signing",
               "guides/stellar-tx-simulation",
               "guides/stellar-explorer-recipes",
-              "guides/privacy-best-practices",
-              "guides/spectre-stellar-cookbook",
               "guides/stellar-federation",
               "guides/stellar-custom-assets",
-              "guides/wraith-names-stellar"
+              "guides/stellar/stellar-liquidity-pool-swap",
+              "guides/stellar/stellar-path-payment",
+              "guides/wraith-names-stellar",
+              "guides/ops/self-hosted-deployment"
             ]
           },
           {
@@ -149,7 +166,11 @@
         "groups": [
           {
             "group": "API Reference",
-            "pages": ["api-reference/endpoints", "api-reference/types"]
+            "pages": [
+              "api-reference/endpoints",
+              "api-reference/fetch-announcements-stream",
+              "api-reference/types"
+            ]
           }
         ]
       }
